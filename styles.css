@@ -1,0 +1,330 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f9f4;
+    line-height: 1.6;
+}
+
+
+
+.header {
+    background-color: #004d26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.header .logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    
+}
+
+
+.header .logo img {
+    width: 150px; 
+    height: auto; 
+}
+
+
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to bottom right, #004d26, #228b22);
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    background-color: white;
+    color: #004d26;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .cta:hover {
+    background-color: #228b22;
+    color: white;
+}
+
+/* Catalog */
+.catalog {
+    padding: 40px 20px;
+}
+
+
+.catalog h2 {
+    text-align: center;
+    color: #004d26;
+    margin-bottom: 30px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    color: #004d26;
+}
+
+.add-to-cart {
+    background-color: #004d26;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #228b22;
+}
+
+
+
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d26;
+    color: white;
+    position: relative;
+}
+.footer {
+    font-size: 0.9em; 
+    padding: 15px; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+.main-content {
+    flex: 1; 
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Configurar estos estilos para mañana */
+
+/* Estilo del header */
+.header {
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    padding: 10px 20px;
+    background-color: #004d26; /* Color de fondo */
+    color: white; /* Texto blanco */
+    height: 80px; /* Altura fija del header */
+}
+
+/* Logo a la izquierda */
+.header .logo img {
+    width: 100px; /* Tamaño del logo */
+    height: auto;
+}
+
+/* Galería centrada */
+.header .social-icons {
+    display: flex; /* Íconos en fila */
+    gap: 15px; /* Espaciado entre íconos */
+}
+
+.header .social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para los íconos */
+.header .social-icons img:hover {
+    transform: scale(1.2); /* Ampliar un poco al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Navegación a la derecha */
+.header .nav ul {
+    display: flex; /* Enlaces en fila */
+    list-style: none;
+    gap: 20px; /* Espaciado entre enlaces */
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+    color: #228b22; /* Cambia de color al pasar el mouse */
+}
+
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*Estilo de carrito*/
+
+.cart {
+    max-width: 800px; /* Limita el ancho para centrar */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.cart h2 {
+    text-align: center;
+    color: #004d26;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre productos */
+    padding: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+
+.total-price {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #004d26;
+    margin: 20px 0;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #004d26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.checkout-btn:hover {
+    background-color: #228b22;
+}
+
